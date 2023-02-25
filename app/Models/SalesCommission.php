@@ -10,8 +10,8 @@ class SalesCommission extends Model
     public $incrementing = false;
     public $timestamps = false;
 
-
-    public function scopeGetColumn(){
+    public function scopeGetColumns()
+    {
         return [
             'company',
             'seller',
@@ -21,7 +21,7 @@ class SalesCommission extends Model
             'sold_at',
             'status',
             'total_amount',
-            'commission',
+            'commission'
         ];
     }
 }
